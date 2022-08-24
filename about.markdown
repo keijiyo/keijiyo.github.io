@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![キャプション](https://keijiyo.github.io/assets/images/mstile-150x150.png)
+
 こんにちは、Keijiyoと申します。
 
 このサイトは自分の勉強ブログ的なものです。
