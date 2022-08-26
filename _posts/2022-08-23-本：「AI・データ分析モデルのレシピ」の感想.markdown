@@ -8,7 +8,7 @@ categories: jekyll update
 ビジネスでよくあるデータ分析について知りたかったので、<a href="https://www.ohmsha.co.jp/book/9784274227240/" target="_blank">「AI・データ分析モデルのレシピ」</a>という紙の本を買って読んでみました。勉強になったと感じましたので感想などを書きます。
 
 ### 本を読む準備
-google colab上でjupyter notebookで動作可能なサンプルプログラムが<a href="https://www.ohmsha.co.jp/book/9784274227240/" target="_blank">出版社のサイト</a>からダウンロードできます。
+google colabで実行することを想定したjupyter notebookのサンプルプログラムが<a href="https://www.ohmsha.co.jp/book/9784274227240/" target="_blank">出版社のサイト</a>からダウンロードできます。
 
 取り扱うデータは全てテーブル形式となっていて、データは外部サイトからダウンロードしたり、簡単なデータは自分でcsvファイルを作ってサンプルプログラムを実行できます。
 
