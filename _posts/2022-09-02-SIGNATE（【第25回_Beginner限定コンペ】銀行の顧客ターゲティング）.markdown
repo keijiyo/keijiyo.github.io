@@ -29,5 +29,6 @@ SIGNATEに初めて参加しましたが、コード共有機能がないため�
 
 - LightGBM パラメータチューニング  
 <a href="https://note.com/3x7x37ykr/n/n24646c038959" target="_blank">Pythonで機械学習『LightGBM ハイパーパラメータ　まとめ 』</a>  
-<a href="https://datawokagaku.com/lightgbm/" target="_blank">LightGBMを超わかりやすく解説(理論+実装)【機械学習入門33】</a>
+<a href="https://datawokagaku.com/lightgbm/" target="_blank">LightGBMを超わかりやすく解説(理論+実装)【機械学習入門33】</a>  
+<a href="https://lightgbm.readthedocs.io/en/latest/Parameters.html" target="_blank">LightGBM’s documentation > Parameters</a>
 
