@@ -11,7 +11,7 @@ kaggleのコンペ：<a href="https://www.kaggle.com/competitions/jpx-tokyo-stoc
 
 メダルがもらえるコンペに初参加でしたので、単純にうれしいです。
 
-入賞は難しそうですが、ウォッチしていきます。
+入賞は難しそうですが、ウォッチしていきます。 
 
 【参加コンペ】  
 **<a href="https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction" target="_blank">jpx-tokyo-stock-exchange-prediction（日本取引所グループ開催）</a>**  
