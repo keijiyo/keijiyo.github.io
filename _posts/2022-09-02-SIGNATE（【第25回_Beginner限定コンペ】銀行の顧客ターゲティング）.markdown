@@ -5,7 +5,7 @@ date:   2022-09-02 09:00:00 +0900
 categories: jekyll update
 ---
 
-SIGNATEで <a href="https://signate.jp/competitions/741" target="_blank">【第25回_Beginner限定コンペ】銀行の顧客ターゲティング</a> に参加しました！
+SIGNATEの <a href="https://signate.jp/competitions/741" target="_blank">【第25回_Beginner限定コンペ】銀行の顧客ターゲティング</a> に参加してみました。
 
 本コンペはスコアの閾値 <span style="color: red; ">**AUC=0.850847**</span> をクリアするとTierがUPするということでしたが、なんとかクリアすることができました（汗）！
 
