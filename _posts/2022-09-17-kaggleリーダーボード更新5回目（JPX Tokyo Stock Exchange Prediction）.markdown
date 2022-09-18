@@ -20,4 +20,4 @@ JPXのコンペで評価期間中の5回目のリーダーボード更新があ�
 【参加コンペ】  
 **<a href="https://www.kaggle.com/competitions/jpx-tokyo-stock-exchange-prediction" target="_blank">jpx-tokyo-stock-exchange-prediction（日本取引所グループ開催）</a>**  
 中期的な期待リターンが高い200銘柄/低い200銘柄を予想するコンペ  
-（10月7日に最終順位が確定予定。参加チーム数が2033チームのうち提出プログラムが有効だったチーム数：1060チーム）
+（10月7日に最終順位が確定予定。参加チーム数：2033チーム）
