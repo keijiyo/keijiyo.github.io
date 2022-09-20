@@ -4,8 +4,7 @@ title:  "Udemy 【Pythonで学ぶ】OpenCVでの画像処理入門 復習"
 date:   2022-09-20 15:30:00 +0900
 categories: jekyll update
 ---
-<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 以前、受講したOpenCV入門の内容について復習メモ、参考リンクを残します。
 
