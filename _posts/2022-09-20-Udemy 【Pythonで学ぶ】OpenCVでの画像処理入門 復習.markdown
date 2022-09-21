@@ -10,6 +10,9 @@ categories: jekyll update
 
 画像処理分野はやってみると、視覚的に変化していくので面白いです。
 
+＜講座情報＞  
+<a href="https://www.udemy.com/course/pythonopencv/" target="_blank"> 【Pythonで学ぶ】OpenCVでの画像処理入門</a>
+
 ### 画像処理の基礎
 - 画像処理共通の約束事：原点は左上
 - OpenCVの約束事: (B, G, R)の順番で格納
