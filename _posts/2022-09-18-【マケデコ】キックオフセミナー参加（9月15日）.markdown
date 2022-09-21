@@ -18,7 +18,8 @@ categories: jekyll update
 kaggleのJPXコンペに参加していたので、会話の内容で意味がわかる部分はありました！
 
 ### セミナー情報
-- **<a href="https://techplay.jp/event/872302?utm_source=dailyInfo&utm_medium=email&utm_campaign=tp_20220903" target="_blank">　【マケデコ】キックオフセミナー</a>**  
+- **<a href="https://techplay.jp/event/872302?utm_source=dailyInfo&utm_medium=email&utm_campaign=tp_20220903" target="_blank">【マケデコ】キックオフセミナー</a>**  
+-  <a href="https://zenn.dev/gamella/articles/bdd980d4929a90" target="_blank">JQuants APIを用いて日本最大の株式分析コンペで準優勝した決算評価モデルを動かす方法</a>
 
 ### 投資用語
 用語について調べた分を列挙します。
@@ -64,4 +65,3 @@ kaggleのJPXコンペに参加していたので、会話の内容で意味が�
 - <a href="https://www.smbcnikko.co.jp/terms/index.html" target="_blank">SMBC日興証券 初めてでもわかりやすい用語集</a>
 - <a href="https://www.takahashishoten.co.jp/book/21087.html" target="_blank">いちばんカンタン！　株の超入門書　改訂3版</a>
 - <a href="https://media-kojirokousi.com/5%E5%88%86%E5%8B%95%E7%94%BB%EF%BD%9C%E6%8A%95%E8%B3%87%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%80%8C%E3%82%A8%E3%83%83%E3%82%B8%E3%80%8D%E3%81%A3%E3%81%A6%EF%BC%9F/" target="_blank">小次郎講師のチャート情報局 5分動画｜投資における「エッジ」って？</a>
--  <a href="https://zenn.dev/gamella/articles/bdd980d4929a90" target="_blank">JQuants APIを用いて日本最大の株式分析コンペで準優勝した決算評価モデルを動かす方法</a>
