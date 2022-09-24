@@ -208,7 +208,7 @@ SDF/Mesh/その他
 　NeRFと若干異なり、SDFという3次元表現を採用。  
 　view-consistencyの担保が上手く取れている（見た目が崩壊しない）。
 
-　<a href="https://www.youtube.com/watch?v=Eg0zKeJ6yQ0" target="_blank">参考 NeRF: StyleSDF: High Resolution 3D Consistent Image and Geometry Generation | CVPR 2022</a>
+　<a href="https://www.youtube.com/watch?v=Eg0zKeJ6yQ0" target="_blank">参考 StyleSDF: High Resolution 3D Consistent Image and Geometry Generation | CVPR 2022</a>
 
 - BANMo: Building Animatable 3D Neural Models from Many Casual Videos　※ばんも  
 概要：  
