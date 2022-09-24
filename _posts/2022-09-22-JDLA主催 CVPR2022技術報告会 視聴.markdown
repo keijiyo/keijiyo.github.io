@@ -1,0 +1,272 @@
+---
+layout: post
+title:  "JDLA主催 CVPR2022技術報告会 視聴"
+date:   2022-09-23 15:30:00 +0900
+categories: jekyll update
+---
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+JDLA主催のCVPR2022技術報告会を視聴しました！
+
+頻出キーワードを元に注目論文をPickUpしたとのこと。
+
+E資格で学んだ用語も出てきましたが、初見の用語も結構出てきました。
+
+私にとってはかなり高度な内容と感じましたが、自分の知らない事について知識として動画配信で紹介してもらえたので大変有難いと感じました。
+
+＜動画アーカイブ＞  
+- <a href="https://www.youtube.com/c/JDLA2017" target="_blank">日本ディープラーニング協会のYouTubeサイト</a>
+
+＜報告者＞  
+- <a href="https://www.morphoinc.com/" target="_blank">株式会社モルフォ( Morpho, Inc. )</a>
+
+### CVPRとは  
+Conference on **C**omputer **V**ision and **P**attern **R**ecognition の頭文字。
+
+コンピュータビジョンのトップカンファレンス。歴史的に重要なDL論文を次々に生み出している。  
+
+Google Scholar Metricsによる学術誌ランキングだと過去4年間で引用された論文数が4位。  
+
+1位：Nature、2位：The New England Journal of Medicine、3位：Science、**4位：CVPR**  
+
+ちなみに、国別論文投稿数は中国と米国だけで2/3を占める。日本は1.5%とのこと。  
+
+（参考：過去の著名な論文）  
+  - YOLO(You Only Look Once)
+  - Deep Residual Learning for Image Recognition（スキップ接続の話）
+  - Adversarial Discriminative Domain Adaptation（GANで使われるTarget Encoder（Generator）とDiscriminatorの話）
+
+### Transformer  
+元々言語処理で注目されたDeep neural network 
+
+利点  
+- 遠く離れた単語間の関係をつかめる
+- 画像に応用してもholisticな情報を取れる（全体的な情報）  
+
+⇒精度が高く、近年の主流モデルに。  
+
+欠点  
+- 計算量が多い
+- 未対応のAIチップあり
+
+最近ではTransformerはほぼすべてのタスクで使用実績あり。
+
+またTransformer自体の改良も盛ん。軽量化やattention見直しといったTransformer外への波及も。
+
+（モデル構造に関する論文）
+- A ConvNet for the 2020s
+- MetaFormer Is Actually What You Need for Vision
+- MAXIM: Multi-Axis MLP for Image Processing
+- Mobile-Former: Bridging MobileNet and Transformer
+
+transfomerの長距離依存性をvideo（時系列）に適用する例多数。
+
+精度面で今後さらにの伸びそうな印象。計算量が重い課題は将来に期待。とのこと。
+
+### Self-supervised learning
+
+自己教師あり学習（Self-supervised learning）：  
+ラベル無しデータを用いてAIの精度向上を測る学習手法。
+
+※参考　類似用語  
+　半教師あり学習（Semi-supervised learning）：  
+　⼀部データのみラベルありのデータセットを学習してラベル付けしていく方法  
+　【学習⽅法】  
+　1. ラベルありデータを学習  
+　2. 1.のモデルでラベルなしデータを予測  
+　3. 2.の予測結果を⽤いてラベルなしデータにラベル付け再度ラベルあり/なしデータを学習（Self-Training）
+
+Self-supervised learningの例：SimCLR（ICML 2020）　※しむくりあ
+
+Constrastive Learning（CL；対照学習）
+
+ラベル無し画像に対する「モデル出力の距離」に注目
+
+- 変形した同じ画像のペア
+  - 「近くなるように」学習
+- 違う画像のペア
+  - 「遠くなるように」学習
+
+120万枚の学習データのうち
+
+1. 100%ラベルあり（教師あり学習）
+2. 1%ラベル有り＋99%ラベル無し（CL）
+
+→同等の分類制度を達成！
+
+### Self-supervised learning　CVPR2022での論文紹介
+- A Simple Data Mixing Prior for Improving Self-Supervised Learning  
+SimCLRの改良方法を提案  
+同じ画像のペア由来のMix画像も「近くなるように」学習。  
+（例えば猫と犬の画像についてMix画像を2パターン用意したとして、それらは「近くなるように」学習。）  
+
+　→様々なデータセットで、1％程度の精度向上を実現
+
+- A Self-Supervised Descriptor for Image Copy Detection  
+Image Copy Detection(ICD):  
+  - コピーされた画像を判別
+  - 改変を含む場合の対応が課題  
+  （例えば同じ背景にテキスト有の画像に対しテキスト無の画像コピーがあった場合に、テキスト有の全然違う背景の画像をコピーと判別してしまう。  
+  　また、カラー⇒白黒でコピーしても、カラーの全然違う画像をコピーと判別してしまう。）
+
+　SimCLRで、「違う画像なのに距離が近い」ペアが引き離されるよう学習。
+
+　→分類制度が「48%」向上
+
+- Self-supeervised Learning of Asversarial Example: Toward Good Generalizations for Deepfake Detection  
+Deep Fakeを見分けるモデル  
+  - 学習時にfake画像をランダムに生成
+  - その時の「fakeの位置・種類」をサブタスクとして判別させる。（論文では2つの画像で、目、鼻、口を合成した画像を利用していたとのこと）  
+    ※追加のラベル付けは不要。 
+  - データセットの違いに対する頑健性を獲得し、精度向上。
+
+- CoordGAN: Self-Supervised Dense Correspondences Emerge from GANs  
+「意味」によるGANの生成画像のコントロール  
+※「形状」「テクスチャ」など  
+「部品の変形」としてGANを学習  
+  - ラベル無しで高品質な画像の制御に成功。  
+    - 特に「形状」の固定で飛躍的な進歩
+
+### 3D
+3D分野の中でも今年のトレンドは
+
+- **NeRF**の改良、応用　※なーふ
+- 3次元再構成（SDF/Mesh/PointCloud）
+- GAN等生成モデルの3D化
+
+＜前提知識：NeRF＞
+
+2020年に発表されて現在も大流行。
+
+自由視点から被写体を見た結果を再現できる。
+
+- 学習データ = 特定被写体を映した大量の画像
+- 学習フェーズ = モデル内部に色と密度情報を記録
+- 推論フェーズ = 視点方向を入力すると画像出力
+
+NeRFは次を学習する。
+- 入力：3次元座標と視点方向
+- 出力：色と密度
+
+$$
+(x, y, z, \theta, \phi)  \rightarrow F_\Theta \rightarrow (RGB\sigma)
+$$
+
+$$ \theta, \phi: 視点方向, \sigma: 密度$$
+
+<u>レンダリングの手続き</u>
+
+1. カメラから各画素に向かって直線を伸ばす（各画素ごとに色を決めていく）  
+2. 直線上から3次元点を多数サンプリング
+3. 各3次元点⇒「色と密度」を出力
+4. 直線方向にこれを積分（のようなことを）して画素色を決定
+
+<a href="https://www.youtube.com/watch?v=JuH79E8rdKc" target="_blank">参考 NeRF: Neural Radiance Fields</a>
+
+かなり高精度だが、問題点多い
+- 学習時間が半日～数日
+- 1シーンにつき1モデルの学習
+- 学習画像におけるカメラの配置は全て既知
+- 屋外の遠距離シーンや、動物隊を含むシーンは無理
+
+⇒後続研究で解決されつつある。
+
+＜注目論文＞
+
+NeRF系
+
+- NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images（Synthesis：合成）  
+概要：  
+　RAW画像でNeRF学習  
+新規性：  
+  - 細部表現精度UP
+  - 事後的なHDR(High Dynamic Range: 高い輝度幅)
+  - 事後的な焦点切り替え
+
+- Plenoxeis: Radiance Fields without Neural Networks　※ぷれのくせる  
+概要：  
+　NeRFのMLPを完全排除  
+新規性：  
+　3次元グリッドに直接密度と色を記録する  
+⇒MLPなしでも高品質な結果が求まるのが衝撃。学習時間が1/100に短縮
+
+- Block-NeRF: Scalable Large Scene Neural View Synthesis  
+概要：  
+　複数NeRFを貼り合わせて大規模空間の合成を実現（町全体とか）  
+新規性：  
+　貼り合わせ部分で結果が一致するよう、環境コードをNeRFに追加入力して学習させる。  
+　（例えば昼、夜のように写真を撮るタイミングによって明るさなどかわるので）
+
+SDF/Mesh/その他
+
+- StyleSDF: High-Resolution 3D-Consistent Image and Geometry Generation  
+概要：  
+　StyleGANとNeRFの融合  
+新規性：  
+　NeRFのMLPに顔形状を表す特徴量も追加入力、GANの能力を付加。  
+  
+　NeRFと若干異なり、SDFという3次元表現を採用。  
+　view-consistencyの担保が上手く取れている（見た目が崩壊しない）。
+
+　<a href="https://www.youtube.com/watch?v=Eg0zKeJ6yQ0" target="_blank">参考 NeRF: StyleSDF: High Resolution 3D Consistent Image and Geometry Generation | CVPR 2022</a>
+
+- BANMo: Building Animatable 3D Neural Models from Many Casual Videos　※ばんも  
+概要：  
+　一般に撮影した単眼ビデオで3Dモデルを作る挑戦的試み  
+新規性：  
+　カメラの動きは自動推定  
+　特定物体にも限定しない。  
+　形状が一貫性を持つようself-supervisedな功名なロス設計（難しい内容）。  
+　NeRFのレンダリング手法を組み込んでいる。
+  
+- Extracting Triangular 3D Models, Materials, and Lighting From Images  
+概要：  
+　NeRFやSDFは形状・質感・光の情報がモデル内部でごちゃ混ぜ。 ちょっとここをへこませたい。とか、 光源の位置を少しずらしたいとか難しい。  
+　本論文ではmesh/texture/lighting（形状/質感/照明）を直接最適化。  
+新規性：  
+　BlenderやUnrealEngineへのexportが非常に簡単。  
+　最適化が難しいのをうまく工夫。
+
+### 注目論文ディープダイブ　まとめ
+**When Does Constrastive Visual Representation Learning Work? (Cole+)**  
+
+画期的な成果を上げているSimCLR
+
+- データ量
+- データドメインの違い
+- データ品質
+- タスクの粒度
+
+の観点で、CLが効果を発揮する条件を詳細に調査↓。
+
+1. ラベル無し画像の増加による精度向上は顕著。
+2. 異なるドメインのデータを混ぜると精度が悪化。
+3. 解像度の劣化に対してCLの精度劣化は大きい。
+4. 分類の粒度が細かい場合、CLは不適である。
+
+**3D Moments from Near-Duplicate Photos (Wang+)**
+- モチベーション  
+　携帯で撮影するとしばしばバースト撮影（時系列的に連続に撮影）することがある。  
+　⇒これと3D Photographyを融合出来たら面白いのでは？
+- 概要：2枚画像からフレーム補完&3次元新規視点合成
+
+　Step1. 画像2枚を背景位置合わせして単眼depth推論
+　<a href="https://note.com/kazu_t/n/n6acd47f70805" target="_blank">(参考　Pythonで学ぶ深度推定)</a>
+
+　Step2. Depthを使って3D表現(Layered Depth Image)に持ち上げる & occlusionをinpainting（白抜きになった背景をGANで塗りつぶし）
+
+　Step3. RGB画像の対応点から3Dのscene flowを求める。
+
+　Step4?. それぞれをワープさせて加重平均してレンダリングしたら完成?  
+　⇒Depthやscene flowのミスが目立つ。NG。
+
+　Step5. Encodeした特徴量をdepthを使ってpoint cloudに持ち上げ。
+　<a href="https://ja.wikipedia.org/wiki/%E7%82%B9%E7%BE%A4_(%E3%83%87%E3%83%BC%E3%82%BF%E5%BD%A2%E5%BC%8F)" target="_blank">(参考　point cloud(点群))</a>
+
+　Step6. ワープして加重平均取ってdecodeしてレンダリング。
+
+　ちなみに  
+　この3D表現はNeRFに比べて圧倒的に高速。  
+　実際3D Photography であればスマホで動作（Facebook）  
+　⇒軽量化はモデルのプルーニング、ハイパーパラメタの最適化。メッシュの使い方で何かやっていたか、とのこと。
+
