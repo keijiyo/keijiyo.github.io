@@ -49,5 +49,5 @@ categories: jekyll update
 
 トレーニング期間、モデル評価期間でぐるぐる回して性能向上させる。
 
-### 参考サイト・書籍
+### 参照サイト
 - <a href="https://japanexchangegroup.github.io/J-Quants-Tutorial/" target="_blank">株式分析チュートリアル</a>
