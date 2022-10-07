@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "【マケデコ】初心者向け株式分析セミナー 参加（9月28日）"
+date:   2022-10-07 16:30:00 +0900
+categories: jekyll update
+---
+
+9月28日の事でしたがメモを残します。
+
+システムトレードの初心者向けとのことで有難かったです。
+
+### セミナー情報
+- <a href="https://mkdeco.connpass.com/event/259946/?utm_campaign=event_message_to_selected_participant&utm_source=notifications&utm_medium=email&utm_content=title_link" target="_blank">【マケデコ】初心者向け株式分析セミナー: データ分析/モデル作成から評価まで全部！</a>
+-  <a href="https://market-api.dev/" target="_blank">マケデコとは</a>
+
+## 株式のシステムトレード初心者の最初の一歩
+
+株式投資の戦略を立案する場合、投資する株式の銘柄選択を助けるため**スコア**をまず設計することが多い
+
+スコアはどうやって作るのか
+
+|手法|説明|
+|:-|:-|
+|テクニカル分析|移動平均乖離率などそもそも銘柄全体を通して比較できるテクニカル分析はそのままスコアになる。|
+|ファンダメンタル分析|ROEなどファンダメンタルから銘柄間で比較可能な正規化したスコアを生成する手法。王道のアプローチ。<a href="https://www.tr.mufg.jp/houjin/jutaku/pdf/u201503_1.pdf" target="_blank">「投資指標としてのROE」</a>というレポートがわかりやすいとのこと|
+|オルタナティブデータからの生成|オルタナティブデータとは、機関投資家によって投資判断のために使われるデータのうち、伝統的に用いられてきた決算開示等、一般的な公開情報以外のデータ群の総称。個人投資家が触る機会は少ない。売買内訳データなどを指す。空売りが多いとその後に値下がりする可能性が高いと仮説を立て、順位相関の累計プロット、スプレッドリターンによる評価をする等。|
+|機械学習モデル|収益率など（将来リターン）|
+
+スコアの評価方法はまずは２つを覚える。
+- 順位相関の累積プロット
+- 分位リターンのプロット
+
+## JQuants APIによる株式データ分析の最初の一歩
+<a href="https://colab.research.google.com/github/J-Quants/jquants-api-client-python/blob/master/examples/20220927-005-jquants-api-starter.ipynb#scrollTo=KkNXT7iUBckP" target="_blank">J-Quants APIの利用の仕方</a>
+
+## JQuants株式分析チュートリアル
+<a href="https://github.com/AlpacaDB/jquants-api-sample/blob/main/20220928_jquantsapi_tutorial.ipynb" target="_blank">jquants-api-sample</a>
+
+### 特徴量の設計
+時系列データを扱う際は、**定常性**を意識して特徴量を設計することが重要。
+
+**株価**をそのまま学習させてもテスト期間ではうまく行かないことが多い。
+
+**価格変化率**をを考えると正規分布ではないが、一部のマーケットの混乱期を除けば0を中心とした正規分布に近い分布になる。
+
+### 予測モデルの作成方法
+
+データをトレーニング期間、モデル評価期間、テスト期間と分割しホールドアウト検証を行う。
+
+トレーニング期間、モデル評価期間でぐるぐる回して性能向上させる。
+
+### 参考サイト・書籍
+- <a href="https://japanexchangegroup.github.io/J-Quants-Tutorial/" target="_blank">株式分析チュートリアル</a>
