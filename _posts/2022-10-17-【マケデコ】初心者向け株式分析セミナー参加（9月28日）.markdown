@@ -49,5 +49,9 @@ categories: jekyll update
 
 トレーニング期間、モデル評価期間でぐるぐる回して性能向上させる。
 
+SHAPをつかって予測に対して特徴量がどのような影響を与えたかを見る。
+
 ### 参照サイト
+- <a href="https://github.com/microsoft/qlib" target="_blank">クオンツライブラリ（各評価計算）qlib</a>
 - <a href="https://japanexchangegroup.github.io/J-Quants-Tutorial/" target="_blank">株式分析チュートリアル</a>
+- <a href="https://qiita.com/shin_mura/items/cde01198552eda9146b7" target="_blank">Shapを用いた機械学習モデルの解釈説明</a>
