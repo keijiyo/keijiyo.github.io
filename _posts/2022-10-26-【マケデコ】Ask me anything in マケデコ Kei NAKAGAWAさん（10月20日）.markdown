@@ -9,7 +9,7 @@ categories: jekyll update
 
 巨大なNNは使っておらず、5層くらいのNNを使っているとのこと。
 
-投資用語でわからなかったものは確認して<a href="{{site.baseurl}}/note/" target="_blank"> **J-Quants note** </a>に追記しました。
+投資用語でわからなかったものは確認して<a href="{{site.baseurl}}/note/"> **J-Quants note** </a>に追記しました。
 
 ### セミナー情報
 - <a href="https://mkdeco.connpass.com/event/261589/" target="_blank">Ask me anything in マケデコ Kei NAKAGAWAさん</a>
