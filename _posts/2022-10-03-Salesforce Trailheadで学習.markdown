@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Salesforce を Trailhead で学習"
+title:  "Salesforce を Trailhead の初心者向けトレーニングで学習"
 date:   2022-10-03 11:30:00 +0900
 categories: jekyll update
 ---
