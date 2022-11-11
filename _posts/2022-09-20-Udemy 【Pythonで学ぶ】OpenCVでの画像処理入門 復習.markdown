@@ -104,8 +104,14 @@ $$
 $$
 
 $$
+\rho = x \cos\theta + y \sin\theta
+$$
+
+$$
 y = - \frac{\cos\theta}{\sin\theta} + \frac{\rho}{\sin\theta}
 $$
+
+![Hough](https://keijiyo.github.io/assets/images/Hough.png)
 
 全ての点の$$\rho$$と$$\theta$$を集め、一番多かったパラメータを直線とする。
 
