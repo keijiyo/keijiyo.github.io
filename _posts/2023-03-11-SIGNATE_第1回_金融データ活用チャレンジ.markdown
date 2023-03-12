@@ -25,7 +25,7 @@ categories: jekyll update
 - 評価値は0～1の値をとり、精度が高いほど大きな値となります。
 
 ### 試したこと
-1. UMAP + LightGBM でAUC 0.89 以上の結果が出るtutorial あり。これに対しoptuna でLightGBM のハイパーパラメタ最適化実施  
+1. UMAP + LightGBM でAUC 0.89 以上の結果が出るtutorial あり。これに対しoptuna でLightGBM + optuna のハイパーパラメタ最適化実施  
   -> AUC: 0.953まで上昇
 
 2. データを眺めて、一か月前の値で有効そうなものを追加  
