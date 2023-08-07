@@ -7,7 +7,7 @@ categories: jekyll update
 
 KCNA-JP (Kubernetes and Cloud Native Associate Exam Japanese) 試験に合格しました。  
 
-受験のきっかけは、最近仕事でKubeneretes を触り始めたこともあり、まずざっくり基本を理解したいと思ったためでした。
+受験のきっかけは、最近仕事でKubernetes を触り始めたこともあり、まずざっくり基本を理解したいと思ったためでした。
 
 「Kubernetesと広範なクラウド ネイティブ エコシステムに関する基本的な知識とスキルを証明」する試験という事で、自分のような入門者にはちょうど良いと思った次第です。
 
