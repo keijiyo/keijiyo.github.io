@@ -20,6 +20,7 @@ permalink: /about/
 
 ### 実務経験
 - 業務系システムSE／PG
+- データエンジニア
 - クラウドサーバ構築
 - サポート  
 
@@ -30,7 +31,8 @@ permalink: /about/
   - 統計検定2級
   - Python3 エンジニア認定データ分析試験
   - JDLA E資格 2022#1
-- クラウド  
+- クラウド関連  
   - AZ-900 Microsoft Azure Fundamentals
   - AWS Cloud Practitioner
   - AWS Solutions Architect Associate
+  - KCNA-JP (Kubernetes and Cloud Native Associate Exam Japanese)

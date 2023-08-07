@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "KCNA-JP 受験 (Kubernetes and Cloud Native Associate Exam Japanese) "
+date:   2023-08-07 00:00:00 +0900
+categories: jekyll update
+---
+
+KCNA-JP (Kubernetes and Cloud Native Associate Exam Japanese) 試験に合格しました。  
+
+受験のきっかけは、最近仕事でKubeneretes を触り始めたこともあり、まずざっくり基本を理解したいと思ったためでした。
+
+「Kubernetesと広範なクラウド ネイティブ エコシステムに関する基本的な知識とスキルを証明」する試験という事で、自分のような入門者にはちょうど良いと思った次第です。
+
+### 受験に至るまでの勉強等
+
+- [Introduction to Kubernetes (LFS158x)](https://training.linuxfoundation.org/ja/training/introduction-to-kubernetes/) を受講し始める (無料で開始できる)
+
+- [Kuberbetesとクラウドネイティブ基礎 (LFS250-JP)](https://training.linuxfoundation.org/ja/training/kubernetes-and-cloud-native-essentials-lfs250-jp/) (章末に知識確認テストあり) と[KCNA-JP](https://training.linuxfoundation.org/ja/certification/kubernetes-and-cloud-native-associate-kcna-jp/)のバンドルを割引クーポンが出たタイミングで購入し、こちらのトレーニングの方を先に一通り受講
+
+- 追って、[Introduction to Kubernetes (LFS158x)](https://training.linuxfoundation.org/ja/training/introduction-to-kubernetes/)を一通り受講  
+  (無料のまま続けたため章末の知識確認テストや最終テストは受けられない)
+
+- 試験勉強期間中に読んだ本
+  - [Kubernetesの知識地図 —— 現場での基礎から本番運用まで](https://www.amazon.co.jp/Kubernetes%E3%81%AE%E7%9F%A5%E8%AD%98%E5%9C%B0%E5%9B%B3-%E2%80%94%E2%80%94-%E7%8F%BE%E5%A0%B4%E3%81%A7%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%81%8B%E3%82%89%E6%9C%AC%E7%95%AA%E9%81%8B%E7%94%A8%E3%81%BE%E3%81%A7-%E9%9D%92%E5%B1%B1-%E7%9C%9F%E4%B9%9F/dp/4297135736) という本が出たので、買って一通り読んだ
+  - [マイクロサービスアーキテクチャ 第2版](https://www.amazon.co.jp/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3-%E7%AC%AC2%E7%89%88-Sam-Newman/dp/4814400012) という本を買って、知らない用語を参照した
+
+- Udemy の[2023 Kubernetes and Cloud Native Associate (KCNA) Mock Exam](https://www.udemy.com/course/2023-kubernetes-and-cloud-native-associate-kcna-mock-exam/) を割引で購入し、1回解く
+
+- 私用PC (Windows 10) にMinikube, Kubectl 等をインストールしコマンド操作。上記講座に案内あり  
+  [kubectlチートシート](https://kubernetes.io/ja/docs/reference/kubectl/cheatsheet/) は入門者にとって便利
+
+- 主に[Introduction to Kubernetes (LFS158x)](https://training.linuxfoundation.org/ja/training/introduction-to-kubernetes/) をノートにまとめる (Google spread sheet 使用)  
+[Kuberbetesとクラウドネイティブ基礎 (LFS250-JP)](https://training.linuxfoundation.org/ja/training/kubernetes-and-cloud-native-essentials-lfs250-jp/) の方も一通り見直し、紹介されたコマンド等をノートに残す  
+知識確認テストなどで間違った点等もノートに追記する
+
+-  Udemy の[2023 Kubernetes and Cloud Native Associate (KCNA) Mock Exam](https://www.udemy.com/course/2023-kubernetes-and-cloud-native-associate-kcna-mock-exam/) を2回目解く
+
+
+### 受験について
+- 初回スケジュールで、PSI Bridge Secure Browser という試験ツールがカメラを認識せず、受験できず  
+  事前のChrome からのチェックではOKだったこともあり、サポートにissue を上げたところ、事前にPSI のサポートに直接チャット相談するのがおすすめとのこと。
+
+- チャット相談 (英語でした)  
+  リモートセッションしても良いかとのことだったが、試験用のローカルユーザーを作っていなかったため、回避。以下の確認を案内してもらった
+  - アプリがカメラ使用する事を許可しているかシステム設定から確認すること
+  - 利用PC がPSI Bridge Secure Browser の仕様要件をみたしているか
+　  
+  -> 上記に問題は見つからなかった。  
+  -> **結果的にノートン360 をアンインストールしたらカメラを認識した！**
+
+- 1週間後に再スケジュールし受験
+  - チャットでいろいろカメラで映してほしいといった、試験官の指示に従う (やりとりは英語でした) 
+  - 結構知らない問題が出た印象
+  - あきらめないで時間いっぱいまで見直す
+
+- 受験の24時間後に結果通知
+  - 正解率: 78 % で合格 (合格ラインは75 %。良かった・・・)
+
+### 受験して良かったこと
+- Kubernetes の基本的なアーキテクチャを知ることができた
+- マイクロサービスアーキテクチャを知ることができた
+- [Kubernetes の公式ドキュメントページ](https://kubernetes.io/ja/docs/home/)への馴染みが得られた
+- Kubernetes のエコシステムで名前を聞いて、どういう機能なのかわかる分が増えた
